@@ -51,7 +51,9 @@ jobs:
         run: uv sync
 
       - name: Swap to CPU-only torch (removes CUDA kernels, saves ~1.3 GB)
-        run: uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu --force-reinstall
+        run: |
+          uv pip uninstall torch torchvision || true
+          uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 
       - name: Build executable
         run: uv run pyinstaller photos-categorizer.spec
