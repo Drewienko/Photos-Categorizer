@@ -35,7 +35,9 @@ def main() -> None:
     app.setStyle("Fusion")
     app.setPalette(_dark_palette())
 
-    qss_path = Path(__file__).parent / "ui" / "style.qss"
+    # sys._MEIPASS is set by PyInstaller; fall back to package path in dev
+    _base = Path(getattr(sys, "_MEIPASS", Path(__file__).parent))
+    qss_path = _base / "ui" / "style.qss"
     if qss_path.exists():
         app.setStyleSheet(qss_path.read_text(encoding="utf-8"))
 
