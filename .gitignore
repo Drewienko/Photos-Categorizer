@@ -1,0 +1,19 @@
+# uv / Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+dist/
+*.egg-info/
+.python-version
+
+# Claude Code
+local/
+
+# App data
+*.db
+*.sqlite
+
+# Env / secrets
+.env
+*.json.key
