@@ -15,8 +15,9 @@ University project, Systemy Multimedialne, 3ID12A.
 
 ## Download
 
-Pre-built binaries for Linux and Windows are on the [Releases](../../releases/latest) page.
-**ffmpeg is bundled**, no extra installs needed.
+**Windows**: grab `photos-categorizer.exe` from the [Releases](../../releases/latest) page. ffmpeg is bundled, no extra installs needed.
+
+**Linux**: use the run from source steps below.
 
 > First launch downloads the CLIP model (~350 MB, one-time). Subsequent launches are instant.
 
