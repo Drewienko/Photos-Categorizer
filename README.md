@@ -19,7 +19,7 @@ University project, Systemy Multimedialne, 3ID12A.
 
 **Linux**: use the run from source steps below.
 
-> First launch downloads the CLIP model (~350 MB, one-time). Subsequent launches are instant.
+> First launch downloads the CLIP model (~580 MB, one-time). Subsequent launches are instant.
 
 ## Run from source
 
